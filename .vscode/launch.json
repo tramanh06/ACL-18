@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AllSingaporeStuffWrapper",
+            "request": "launch",
+            "mainClass": "de.aitools.aq.wrappers.AllSingaporeStuffWrapper",
+            "projectName": "ACL-18"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TheIndependentWrapper",
+            "request": "launch",
+            "mainClass": "de.aitools.aq.wrappers.TheIndependentWrapper",
+            "projectName": "ACL-18"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TheOnlineCitizenWrapper",
+            "request": "launch",
+            "mainClass": "de.aitools.aq.wrappers.TheOnlineCitizenWrapper",
+            "projectName": "ACL-18"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StatesTimesReviewWrapper",
+            "request": "launch",
+            "mainClass": "de.aitools.aq.wrappers.StatesTimesReviewWrapper",
+            "projectName": "ACL-18"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JsoupTester",
+            "request": "launch",
+            "mainClass": "JsoupTester",
+            "projectName": "ACL-18"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "",
+            "args": "",
+            "projectName": "ACL-18"
+        }
+    ]
+}

@@ -104,6 +104,14 @@ public class CompositeWrapper extends Wrapper {
     this.addWrapper(new de.aitools.aq.wrappers.WSJWrapper());
     this.addWrapper(new de.aitools.aq.wrappers.YesImRightWrapper());
     this.addWrapper(new de.aitools.aq.wrappers.YourNewsWireWrapper());
+
+    // Singapore newspapers
+    this.addWrapper(new de.aitools.aq.wrappers.StraitsTimesWrapper());
+    this.addWrapper(new de.aitools.aq.wrappers.ChannelNewsAsiaWrapper());
+    this.addWrapper(new de.aitools.aq.wrappers.StatesTimesReviewWrapper());
+    this.addWrapper(new de.aitools.aq.wrappers.AllSingaporeStuffWrapper());
+    this.addWrapper(new de.aitools.aq.wrappers.TheIndependentWrapper());
+    this.addWrapper(new de.aitools.aq.wrappers.TheOnlineCitizenWrapper());
   }
 
   public void addWrapper(final Wrapper wrapper) {
@@ -118,7 +126,7 @@ public class CompositeWrapper extends Wrapper {
     return false;
   }
   
-  protected Article parse(final Document jsoupDocument, final String uri) {
+  public Article parse(final Document jsoupDocument, final String uri) {
     for (final Wrapper wrapper : this.wrappers) {
       if (wrapper.isValidUri(uri)) {
         return wrapper.parse(jsoupDocument, uri);
